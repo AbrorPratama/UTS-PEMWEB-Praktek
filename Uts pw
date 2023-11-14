@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+    width: 100%;
+    margin: 100px auto;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form{
+    display: flex;
+}
+
+label{
+    display: inline-block;
+    width: 150px;
+    padding: 5px;
+}
+
+.button button{
+    margin: 5px;
+}
+
+.button {
+    margin-left: 155px;
+}
+
+.button :nth-child(1){
+    color: blue;
+}
+
+.button :nth-child(2){
+    color: red;
+}
+    </style>
+    <fieldset>
+        <legend>Booking Services</legend>
+
+            <div class="form">
+            <label for="jk">Jenis Kendaraan</label>
+            <select name="jeniskendaraan" id="jk"> 
+                <option value="bus">Minibus</option>
+                <option value="kereta">Kereta</option>
+                <option value="mobil">Mobil</option>
+            </select>
+        </div>
+
+        <br>
+
+            <div class="form">
+            <label for="np">Nama Pemesan</label>
+            <input type="text" id="np">
+            </div>
+
+            <br>
+
+            <div class="form">
+             <label for="kp">Kategori Peminjam</label>
+             <p><input type="radio" id="kp">Pribadi</p>
+             <p><input type="radio">Perusahaan/Organisasi</p>
+            </div>
+
+            <div class="form">
+            <label for="dk">Deskripsi Kebutuhan</label>
+            <textarea name="" id="dk" cols="50" rows="2"></textarea>
+        </div>
+
+            <br>
+
+            <div class="form">
+            <label for="jam">Jam, Tanggal Services</label>
+            <input type="datetime-local" id="jam">
+        </div>
+            <br>
+            <div class="form">
+            <label for="rm">Request Montir</label>
+            <input type="text" id="rm">
+        </div>
+            <br>
+            <div class="form">
+            <label for="tp">Telepon/HP</label>
+            <input type="number" id="tp">
+        </div>
+            <br>
+            <div class="form">
+            <label for="emaill">Email</label>
+            <input type="email" id="emaill">
+        </div>
+            <br>
+
+            <div class="button">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </div>
+</fieldset>
+</body>
+</html>
